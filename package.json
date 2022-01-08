@@ -27,6 +27,7 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
+    "heroku-postbuild": "webpack --config webpack.config.prod.js",
     "start": "node server.js",
     "react": "react-scripts start",
     "build": "react-scripts build",
