@@ -82,9 +82,7 @@
       display: flex;
       justify-content: center;
       align-items: center; }
-      @media (max-width: 880px) {
-        .header-logo-image:nth-child(1) {
-          display: none; } }
+      
       .header-logo-image__img {
         cursor: pointer;
         object-fit: cover;
