@@ -39,7 +39,7 @@ const SignUp = ({ sign }) => {
         console.log(user);
         let stat = false;
         axios
-          .post("http://localhost:4000/register", user)
+          .post("/register", user)
           .then((res) => {
             console.log(res.data);
             setSnackMsg(res.data.message);
