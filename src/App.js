@@ -15,7 +15,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:4000",
+  baseURL: "",
 });
 
 function App() {
