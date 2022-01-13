@@ -35,7 +35,7 @@ const Rules = () => {
       <div className="rules-box">
         <div
           className="rules-bar"
-          style={{ height: `${rules.length * 9.5}rem` }}
+          style={{ height: `${rules.length * 10}rem` }}
         ></div>
         <div className="rules-container">
           {rules.map((rule, index) => (
