@@ -7,7 +7,7 @@ const Rules = () => {
     "Participants should have basic knowledge of Investment and Stock Market.",
     "Participants should have knowledge on how to make portfolios.",
     "Participants can only include the companies that are listed in NSE.",
-    "The initial price considered of the stock would be the closing price on the day before the submission day i.e., Friday the 19th November (tentatively)",
+    "The initial price considered of the stock would be the closing price on the day before the submission day i.e., Sunday the 23rd January (tentatively)",
     "Shares of minimum one company must be added in the portfolio.",
     "Shares of maximum 10 different companies can be added in the portfolio.",
     "Participants can use any source to know the best required.",
