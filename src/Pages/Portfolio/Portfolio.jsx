@@ -28,11 +28,7 @@ const StockInput = ({ index, companyValue, volumeValue, onChange }) => {
           value={companyValue}
           onChange={onChange}
         />
-        <datalist id="typeSuggestions">
-          {companySuggestions.map((companySuggestion, index) => (
-            <option value={companySuggestion} key={index} />
-          ))}
-        </datalist>
+       
       </td>
       <td className="table-td table-td-volume">
         <input
