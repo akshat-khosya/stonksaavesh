@@ -35,16 +35,25 @@ const About = () => {
                         <div className="col-lg-100 col-md-100 col-sm-100">
                             <div className="about-card-prize-image">
                                 <img src={gold} alt="Gold" className="about-card-prize-image__img" />
+                                <div className='about-card-prize-image__content'>
+                                    <span>INR 1300/-</span>
+                                </div>
                             </div>
                         </div>
-                        <div className="col-lg-50 col-md-50 col-sm-50">
+                        <div className="col-lg-50 col-md-50 col-sm-100">
                             <div className="about-card-prize-image">
                                 <img src={silver} alt="Silver" className="about-card-prize-image__img" />
+                                <div className='about-card-prize-image__content'>
+                                    <span>INR 1000/-</span>
+                                </div>
                             </div>
                         </div>
-                        <div className="col-lg-50 col-md-50 col-sm-50">
+                        <div className="col-lg-50 col-md-50 col-sm-100">
                             <div className="about-card-prize-image">
                                 <img src={bronze} alt="Bronze" className="about-card-prize-image__img" />
+                                <div className='about-card-prize-image__content'>
+                                    <span>INR 700/-</span>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -260,6 +260,7 @@
   .about-card {
     width: 80%;
     height: 25vh;
+    height: auto;
     margin: 2rem 0;
     display: flex;
     justify-content: center;
@@ -268,8 +269,6 @@
     @media (max-width: 672px) {
       .about-card {
         flex-flow: column; } }
-    .about-card:nth-child(3) {
-      height: 75vh; }
     .about-card > * {
       height: 100%;
       display: flex;
@@ -306,16 +305,44 @@
     .about-card-prize-image {
       width: 100%;
       height: 35vh;
+      position: relative;
       display: flex;
       justify-content: center;
       align-items: center; }
       @media (max-width: 672px) {
         .about-card-prize-image {
           height: 25vh; } }
-      .about-card-prize-image__img {
-        object-fit: cover;
-        max-height: 90%;
-        max-width: 90%; }
+          .about-card-prize-image__img {
+            object-fit: cover;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transition: all var(--transition-time) ease-in-out;
+            transform: translate(-50%,-50%);
+            max-height: 90%;
+            max-width: 90%; }
+            .about-card-prize-image__content {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              color: var(--bgcolor);
+              opacity: 0;
+              transition: all var(--transition-time) ease-in-out;
+              transform: translate(-50%,-50%);
+              font-size: 2.5rem;
+            line-height: 3rem; }
+            .about-card-prize-image__img:hover{
+              filter: brightness(0) blur(0.5rem) drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.5));
+            }
+            .about-card-prize-image__img:hover+.about-card-prize-image__content{
+              opacity: 1;
+            }
+            .about-card-prize-image__content:hover{
+              opacity: 1;
+            }
+            .about-card-prize-image__content:hover+.about-card-prize-image__img{
+              filter: brightness(0) blur(0.5rem) drop-shadow(0 0 0.25rem rgba(0, 0, 0, 0.5));
+            }
 
 .footer {
   height: 30vh;
