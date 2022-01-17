@@ -108,7 +108,7 @@ const Portfolio = ({ GoTo, stocks, submit, load }) => {
     };
     console.log(userData);
     axios
-      .post("http://localhost:4000/company", userData)
+      .post("/company", userData)
       .then((res) => {
         load();
         return res;
