@@ -13,7 +13,8 @@ const Rules = () => {
     "Participants can use any source to know the best required.",
     "Only the profit or loss earned from the principle of Rs. 5 Lakh will be taken into account.",
     "If the limit exceeds, the last added stock would be excluded from the portfolio, and so on until the total investment is under 5 lakh INR ",
-    "Minimum volume of share bought must be 50k.",
+    "The 20-days average traded volume of share should be greater than 50k.",
+    "The shares bought in the portfolio, must be easily issuable, i.e, even if its traded volume is large, the share should have a decent liquidity in the market.",
     "If a particular company (whose shares are bought) announces bonus shares or dividends in the notice period then its profit will also be considered. ",
   ];
   const navigate = useNavigate();
