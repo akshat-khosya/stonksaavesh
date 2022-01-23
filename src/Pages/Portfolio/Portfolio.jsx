@@ -20,6 +20,7 @@ const StockInput = ({ index, companyValue, volumeValue, onChange }) => {
     <tr key={index} className="table-tr">
       <td className="table-td table-td-company">
         <input
+          disabled
           className="table-td-company__input"
           type="text"
           placeholder="Company Name"
@@ -290,12 +291,7 @@ const Portfolio = ({ GoTo, stocks, submit, load }) => {
                 colSpan="2"
                 style={{ width: "20%", padding: 0 }}
               >
-                <button
-                  className="portfolio-form-button__save__button"
-                  type="submit"
-                >
-                  Save
-                </button>
+                
               </td>
             </tr>
           </table>
