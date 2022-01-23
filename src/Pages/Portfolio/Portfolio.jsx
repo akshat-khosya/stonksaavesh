@@ -33,6 +33,7 @@ const StockInput = ({ index, companyValue, volumeValue, onChange }) => {
       </td>
       <td className="table-td table-td-volume">
         <input
+          disabled
           className="table-td-volume__input"
           type="number"
           min="1"
